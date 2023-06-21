@@ -9,7 +9,7 @@ FILE *f;
 char *line = NULL;
 size_t length = 0;
 ssize_t r;
-unsigned int line_num = 0;
+unsigned int line_num = 1;
 stack_t *stack = NULL;
 f = fopen(file, "r");
 if (f == NULL)
@@ -19,8 +19,8 @@ exit(EXIT_FAILURE);
 }
 while ((r = getline(&line, &length, f)) != -1)
 {
-line_num++;
 process_l(&stack, line, line_num);
+line_num++;
 }
 free(line);
 fclose(f);

@@ -1,6 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
-
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -8,7 +8,9 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <ctype.h>
-
+#define UNUSED(x) (void)(x)
+#define _POSIX_C_SOURCE 200809L
+extern char *global_data;
 /* Data structures */
 
 /**
@@ -40,6 +42,14 @@ typedef struct instruction_s
 char *opcode;
 void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+/*opcode*/
+void f_pall(stack_t **stack, unsigned int line_num);
+void f_push(stack_t **stack, unsigned int line_num);
 
-
+/* other functions */
+void (*get_operation_c_func(char *opcode))(stack_t **stack, unsigned int line_num);
+int main(int argc, char *argv[]);
+void process_l(stack_t **stack, char *line, unsigned int line_num);
+void read_monty_f(const char *file);
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 #endif

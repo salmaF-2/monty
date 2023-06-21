@@ -5,7 +5,7 @@
  * @line: line of monty code
  * @line_num: number of the current line
  */
-void process_line(stack_t **stack, char *line, unsigned int line_num)
+void process_l(stack_t **stack, char *line, unsigned int line_num)
 {
 char *operation_code;
 void (*function)(stack_t **stack, unsigned int line_num);
