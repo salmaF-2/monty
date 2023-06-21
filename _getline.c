@@ -1,9 +1,9 @@
 #include "monty.h"
 /**
- * getline - 
- * @lineptr:
- * @n
- * @stream:
+ * getline - function that get line
+ * @lineptr: double pointer to line
+ * @n: nums of lines
+ * @stream: pointer
  * Return: 1 or -1
  */
 ssize_t getline(char **lineptr, size_t *n, FILE *stream)

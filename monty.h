@@ -47,7 +47,7 @@ void f_pall(stack_t **stack, unsigned int line_num);
 void f_push(stack_t **stack, unsigned int line_num);
 
 /* other functions */
-void (*get_operation_c_func(char *opcode))(stack_t **stack, unsigned int line_num);
+void (*get_opc(char *opc))(stack_t **stack, unsigned int line_num);
 int main(int argc, char *argv[]);
 void process_l(stack_t **stack, char *line, unsigned int line_num);
 void read_monty_f(const char *file);
