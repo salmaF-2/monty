@@ -15,6 +15,7 @@ instruction_t instruc[] = {
 {"swap", f_swap},
 {"add", f_add},
 {"nop", f_nop},
+{"sub", f_sub},
 {NULL, NULL}
 };
 int i;
