@@ -16,6 +16,14 @@ instruction_t instruc[] = {
 {"add", f_add},
 {"nop", f_nop},
 {"sub", f_sub},
+{"div", f_div},
+{"mul", f_mul},
+{"mod", f_mod},
+{"pchar", f_pchar},
+{"pstr", f_pstr},
+{"rotl", f_rotl},
+{"rotr", f_rotr},
+{"queue", f_queue},
 {NULL, NULL}
 };
 int i;
