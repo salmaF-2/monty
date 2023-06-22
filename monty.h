@@ -47,6 +47,9 @@ void f_pall(stack_t **stack, unsigned int line_num);
 void f_push(stack_t **stack, unsigned int line_num);
 void f_pint(stack_t **stack, unsigned int line_num);
 void f_pop(stack_t **stack, unsigned int line_num);
+void f_swap(stack_t **stack, unsigned int line_num);
+void f_add(stack_t **stack, unsigned int line_num);
+void f_nop(stack_t **stack, unsigned int line_num);
 
 /* other functions */
 void (*get_opc(char *opc))(stack_t **stack, unsigned int line_num);
