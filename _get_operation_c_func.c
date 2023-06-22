@@ -11,6 +11,7 @@ instruction_t instruc[] = {
 {"push", f_push},
 {"pall", f_pall},
 {"pint", f_pint},
+{"pop", f_pop},
 {NULL, NULL}
 };
 int i;
