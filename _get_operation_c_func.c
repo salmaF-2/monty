@@ -10,6 +10,7 @@ void (*get_opc(char *opc))(stack_t **stack, unsigned int line_num)
 instruction_t instruc[] = {
 {"push", f_push},
 {"pall", f_pall},
+{"pint", f_pint},
 {NULL, NULL}
 };
 int i;
