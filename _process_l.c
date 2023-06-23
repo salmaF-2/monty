@@ -9,8 +9,12 @@ void process_l(stack_t **stack, char *line, unsigned int line_num)
 {
 char *operation_code;
 void (*function)(stack_t **stack, unsigned int line_num);
+while (*line == ' ' || *line == '\t')
+line++;
+if (*line == '#')
+return;
 operation_code = strtok(line, " \t\n");
-if (operation_code == NULL || operation_code[0] == '#')
+if (operation_code == NULL)
 return;
 function = get_opc(operation_code);
 if (function == NULL)
