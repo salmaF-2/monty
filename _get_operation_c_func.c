@@ -24,6 +24,7 @@ instruction_t instruc[] = {
 {"rotl", f_rotl},
 {"rotr", f_rotr},
 {"queue", f_queue},
+{"stack", f_stack},
 {NULL, NULL}
 };
 int i;

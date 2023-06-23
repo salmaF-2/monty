@@ -59,6 +59,7 @@ void f_pstr(stack_t **stack, unsigned int line_num);
 void f_rotl(stack_t **stack, unsigned int line_num);
 void f_rotr(stack_t **stack, unsigned int line_num);
 void f_queue(stack_t **stack, unsigned int line_num);
+void f_stack(stack_t **stack, unsigned int line_num);
 
 /* other functions */
 void (*get_opc(char *opc))(stack_t **stack, unsigned int line_num);
